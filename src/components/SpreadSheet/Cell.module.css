@@ -1,0 +1,61 @@
+
+.cell {
+    position: absolute;
+    border-left: 1px solid gray;
+    border-top: 1px solid gray;
+    z-index: auto;
+}
+
+.cell.is-right-cell {
+    border-right: 1px solid gray;
+}
+
+.cell.is-bottom-cell {
+    border-bottom: 1px solid gray;
+}
+
+.inner-cell {
+    width: 70%;
+    height: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+
+.cell.main-cell {
+    background-color: #ffffffff;
+}
+
+.cell.src-cell {
+    background-color: #d6f3d6ff;
+}
+
+.cell.dst-cell {
+    background-color: #f3d6d6ff;
+}
+
+.cell.main-cell:hover {
+    background-color: #fff2cbff;
+}
+
+.cell.index-cell {
+    background-color: #e9eaecff;
+}
+
+.cell.index-cell:hover {
+    background-color: #fff2cbff;
+}
+
+.cell.header-cell {
+    background-color: #e9eaecff;
+}
+
+.cell.header-cell:hover {
+    background-color: #fff2cbff;
+}
