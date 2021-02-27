@@ -10,7 +10,7 @@ const store = createStore(rootReducer)
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Provider store={store}>
         <Route exact path="/" component={PageSpreadSheet}></Route>
         <Route exact path="/spreadsheet" component={PageSpreadSheet}></Route>
